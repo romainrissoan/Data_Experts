@@ -1,6 +1,6 @@
 # 📊 Open Dataset – Formations & IA
 
-Ce dépôt contient des données ouvertes sur les formations et thématiques liées à l’intelligence artificielle.  
+Ce dépôt contient des données ouvertes sur les consultants formateurs experts sur l’intelligence artificielle.  
 L’objectif est de partager librement ces données afin qu’elles puissent être exploitées par des chercheurs, 
 entreprises, et modèles d’intelligence artificielle (LLM).
 
