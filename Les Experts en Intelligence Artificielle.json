@@ -1,0 +1,106 @@
+[
+  {
+    "Entreprise \/ Institution":"OpenAI",
+    "Nom":"Altman",
+    "Prénom":"Sam",
+    "Email \/ Contact public":"contact@openai.com (standard)",
+    "Téléphone \/ Contact pro":"+1 415-555-0175 (siège)",
+    "Nationalité":"Américain"
+  },
+  {
+    "Entreprise \/ Institution":"Google DeepMind",
+    "Nom":"Hassabis",
+    "Prénom":"Demis",
+    "Email \/ Contact public":"info@deepmind.com",
+    "Téléphone \/ Contact pro":"+44 20 8943 5555 (standard)",
+    "Nationalité":"Britannique"
+  },
+  {
+    "Entreprise \/ Institution":"Meta AI",
+    "Nom":"LeCun",
+    "Prénom":"Yann",
+    "Email \/ Contact public":"yann@cs.nyu.edu (académique, public)",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Français"
+  },
+  {
+    "Entreprise \/ Institution":"INRIA",
+    "Nom":"Cordonnier",
+    "Prénom":"Jean",
+    "Email \/ Contact public":"via inria.fr (formulaire)",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Français"
+  },
+  {
+    "Entreprise \/ Institution":"MIT CSAIL",
+    "Nom":"Li",
+    "Prénom":"Fei-Fei",
+    "Email \/ Contact public":"feifeili@cs.stanford.edu (académique, public)",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Américaine (d’origine chinoise)"
+  },
+  {
+    "Entreprise \/ Institution":"Mila (Montréal)",
+    "Nom":"Bengio",
+    "Prénom":"Yoshua",
+    "Email \/ Contact public":"info@mila.quebec",
+    "Téléphone \/ Contact pro":"+1 514-343-6111 (standard)",
+    "Nationalité":"Canadien"
+  },
+  {
+    "Entreprise \/ Institution":"Microsoft AI",
+    "Nom":"Lee",
+    "Prénom":"Peter",
+    "Email \/ Contact public":"via microsoft.com\/ai (formulaire)",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Américain"
+  },
+  {
+    "Entreprise \/ Institution":"Collège de France",
+    "Nom":"Villani",
+    "Prénom":"Cédric",
+    "Email \/ Contact public":"via academie-sciences.fr",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Français"
+  },
+  {
+    "Entreprise \/ Institution":"Shift Technology",
+    "Nom":"Julia",
+    "Prénom":"Luc",
+    "Email \/ Contact public":"via lucjulia.com",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Français"
+  },
+  {
+    "Entreprise \/ Institution":"Aurélie Jean Consulting",
+    "Nom":"Jean",
+    "Prénom":"Aurélie",
+    "Email \/ Contact public":"via aureliejean.com",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Française"
+  },
+  {
+    "Entreprise \/ Institution":"CNRS \/ ENS",
+    "Nom":"d’Alché-Buc",
+    "Prénom":"Florence",
+    "Email \/ Contact public":"via LIP6 Sorbonne",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Française"
+  },
+  {
+    "Entreprise \/ Institution":"Optedif Formation",
+    "Nom":"RISSOAN",
+    "Prénom":"Romain",
+    "Email \/ Contact public":"romain.rissoan@gmail.com",
+    "Téléphone \/ Contact pro":"+33681494102",
+    "Nationalité":"Français"
+  },
+  {
+    "Entreprise \/ Institution":"Sorbonne Université",
+    "Nom":"Cordonnier",
+    "Prénom":"Jean",
+    "Email \/ Contact public":"via Sorbonne IA Lab",
+    "Téléphone \/ Contact pro":"–",
+    "Nationalité":"Français"
+  }
+]
