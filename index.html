@@ -1,17 +1,302 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Les Experts en Intelligence Artificielle</title>
-  </head>
-  <body>
-    <h1>📊 Dataset – Les Experts en IA</h1>
-    <p>Bienvenue ! Voici les fichiers disponibles :</p>
-    <ul>
-      <li><a href="les_experts_ia.json">➡️ Télécharger le JSON</a></li>
-      <li><a href="les_experts_ia.csv">➡️ Télécharger le CSV</a></li>
-      <li><a href="les_experts_ia.xlsx">➡️ Télécharger le XLSX</a></li>
-    </ul>
-    <p>Licence : CC-BY 4.0 (Romain Rissoan / Optédif Formation)</p>
-  </body>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Les experts IA — jeu de données (consultants & formateurs)</title>
+  <meta name="description" content="Jeu de données ouvert listant des consultants et formateurs experts en intelligence artificielle (France). Téléchargements : XLSX, CSV, JSON. Aperçu, recherche, tri simple." />
+  <meta property="og:title" content="Les experts IA — jeu de données (consultants & formateurs)" />
+  <meta property="og:description" content="Téléchargez le dataset en XLSX, CSV ou JSON. Aperçu en ligne, recherche instantanée, tri simple." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='120' fill='%2300a3ff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='120' font-family='Arial' fill='white'%3EAI%3C/text%3E%3C/svg%3E"/>
+  <style>
+    :root{
+      --bg: hsl(0 0% 100%);
+      --text: hsl(222 47% 10%);
+      --muted: hsl(215 16% 47%);
+      --card: hsl(0 0% 100%);
+      --border: hsl(210 16% 90%);
+      --primary: hsl(205 100% 45%);
+      --primary-600: hsl(205 100% 40%);
+      --ring: hsla(205,100%,45%,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: hsl(222 47% 7%);
+        --text: hsl(210 40% 96%);
+        --muted: hsl(215 16% 75%);
+        --card: hsl(222 47% 8%);
+        --border: hsl(218 20% 18%);
+        --primary: hsl(205 100% 60%);
+        --primary-600: hsl(205 100% 55%);
+        --ring: hsla(205,100%,60%,.25);
+        --shadow: 0 10px 30px rgba(0,0,0,.4);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    header{display:grid;gap:12px;margin-bottom:18px}
+    .title{font-size:clamp(24px,3.6vw,42px);font-weight:800;letter-spacing:-.02em}
+    .subtitle{color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);background:var(--card);padding:10px 14px;border-radius:14px;box-shadow:var(--shadow);font-weight:600}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+    .btn.primary{border-color:transparent;background:var(--primary);color:white}
+    .btn.primary:hover{background:var(--primary-600)}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width:980px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px 16px 10px;box-shadow:var(--shadow)}
+    .card h2{margin:0 0 8px;font-size:20px}
+    .meta{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:14px}
+    .pill{border:1px solid var(--border);border-radius:999px;padding:4px 10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.02))}
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+    .input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:10px 12px;outline:0;box-shadow:inset 0 0 0 1px transparent;transition:.2s}
+    .input:focus{box-shadow:0 0 0 6px var(--ring)}
+    table{width:100%;border-collapse:separate;border-spacing:0}
+    thead th{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--border);text-align:left;padding:10px;font-size:14px}
+    tbody td{border-bottom:1px solid var(--border);padding:10px;vertical-align:top}
+    tbody tr:hover{background:rgba(0,0,0,.03)}
+    @media (prefers-color-scheme: dark){tbody tr:hover{background:rgba(255,255,255,.04)}}
+    .small{font-size:12px;color:var(--muted)}
+    .tabs{display:flex;gap:8px;align-items:center}
+    .tab{padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:var(--card);cursor:pointer}
+    .tab.active{background:var(--primary);border-color:transparent;color:#fff}
+    footer{margin:30px 0 10px;color:var(--muted);font-size:14px}
+    code{background:var(--bg);border:1px solid var(--border);padding:2px 6px;border-radius:8px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    .right p{margin:.3rem 0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="pill">⛏️ Open Data — Répertoire : <a href="https://github.com/romainrissoan/Data_Experts" target="_blank" rel="noopener">romainrissoan/Data_Experts</a></div>
+      <div class="title">Les experts en Intelligence Artificielle (consultants & formateurs)</div>
+      <div class="subtitle">Jeu de données public pour identifier des profils experts IA. Exports disponibles : <strong>XLSX</strong>, <strong>CSV</strong>, <strong>JSON</strong>. Aperçu en ligne avec recherche et tri simples.</div>
+      <div class="actions">
+        <a class="btn primary" href="https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.xlsx">⬇️ Télécharger XLSX</a>
+        <a class="btn" href="https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.csv">⬇️ Télécharger CSV</a>
+        <a class="btn" href="https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.json">⬇️ Télécharger JSON</a>
+        <button id="copyLinks" class="btn" type="button">📋 Copier les liens</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <div class="meta">
+          <span class="pill" id="rowCount">— lignes</span>
+          <span class="pill" id="colCount">— colonnes</span>
+          <span class="pill" id="updated">Mise à jour : —</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="tabs" role="tablist" aria-label="Format d'aperçu">
+            <button class="tab active" data-tab="csv" aria-selected="true">Aperçu CSV</button>
+            <button class="tab" data-tab="json" aria-selected="false">Aperçu JSON</button>
+          </div>
+          <input id="search" class="input" type="search" placeholder="Rechercher (nom, ville, entreprise, email, etc.)…" aria-label="Rechercher" />
+        </div>
+
+        <div id="tableWrap" style="overflow:auto;max-height:60vh;border:1px solid var(--border);border-radius:14px">
+          <table id="dataTable" aria-live="polite">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="small">L’aperçu est limité aux <strong>100 premières lignes</strong> pour des raisons de performance sur GitHub Pages. Utilisez les liens de téléchargement ci‑dessus pour la version complète.</p>
+      </section>
+
+      <aside class="right">
+        <div class="card">
+          <h2>À propos du dataset</h2>
+          <p>• Portée : consultants & formateurs IA, avec métadonnées (entreprise, ville, email, etc.).</p>
+          <p>• Formats : XLSX (source principale), CSV & JSON (exports synchronisés).</p>
+          <p>• Usage : sourcing, veille, mail‑merge, benchmarks territoriaux.</p>
+          <p class="small">Respectez les règles RGPD et la netiquette lors de toute prospection.</p>
+        </div>
+
+        <div class="card">
+          <h2>Contribuer</h2>
+          <p>🛠️ Vous pouvez proposer des ajouts/corrections via <a href="https://github.com/romainrissoan/Data_Experts/issues" target="_blank" rel="noopener">Issues</a> ou <a href="https://github.com/romainrissoan/Data_Experts/pulls" target="_blank" rel="noopener">Pull Requests</a>.</p>
+          <p>💡 Idées d’amélioration : plus de champs normalisés (NAF, SIREN, domaines IA, langues), validation email, géocodage, score de complétude.</p>
+        </div>
+
+        <div class="card">
+          <h2>Intégration rapide</h2>
+          <p>Exemples :</p>
+<pre><code class="kbd"># curl (CSV)
+curl -L "https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.csv" -o experts.csv
+
+# Node.js (fetch JSON)
+const url = "https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.json";
+const data = await (await fetch(url)).json();
+</code></pre>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> Data_Experts • Mainteneur : <a href="https://github.com/romainrissoan" target="_blank" rel="noopener">Romain Rissoan</a>. Si vous utilisez ces données, citez la source. Vous pouvez proposer une <em>LICENCE</em> dans une issue si vous avez une préférence (ex. CC BY 4.0).</p>
+    </footer>
+  </div>
+
+  <script>
+    // --- Configuration des sources ---
+    const SRC = {
+      xlsx: 'https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.xlsx',
+      csv:  'https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.csv',
+      json: 'https://raw.githubusercontent.com/romainrissoan/Data_Experts/refs/heads/main/Les-Experts-en-Intelligence-Artificielle.json'
+    };
+
+    const el = (q) => document.querySelector(q);
+    const thead = el('#dataTable thead');
+    const tbody = el('#dataTable tbody');
+    const search = el('#search');
+    const rowCount = el('#rowCount');
+    const colCount = el('#colCount');
+    const updated = el('#updated');
+    const tabs = [...document.querySelectorAll('.tab')];
+    const tableWrap = el('#tableWrap');
+
+    const MAX_ROWS = 100;
+    let activeTab = 'csv';
+    let originalRows = [];
+    let headers = [];
+
+    async function headRequest(url){
+      try{
+        const r = await fetch(url, { method:'HEAD' });
+        const d = r.headers.get('last-modified') || r.headers.get('x-amz-meta-last-modified');
+        if(d) updated.textContent = 'Mise à jour : ' + new Date(d).toLocaleString();
+      }catch(e){/* noop */}
+    }
+
+    function renderTable(heads, rows){
+      // headers
+      headers = heads;
+      thead.innerHTML = '<tr>' + heads.map(h=>`<th data-key="${h}">${h} ▲</th>`).join('') + '</tr>';
+      // rows
+      tbody.innerHTML = rows.map(r=>{
+        return '<tr>' + heads.map(h=>`<td>${(r[h] ?? '').toString().replaceAll('\n','<br>')}</td>`).join('') + '</tr>';
+      }).join('');
+      rowCount.textContent = (rows.length) + ' lignes (aperçu)';
+      colCount.textContent = heads.length + ' colonnes';
+      // enable sorting
+      thead.querySelectorAll('th').forEach(th => {
+        th.addEventListener('click', ()=> sortBy(th.dataset.key));
+      });
+    }
+
+    function sortBy(key){
+      const dir = (sortBy._dir = sortBy._key === key ? -sortBy._dir : 1);
+      sortBy._key = key;
+      const rows = [...originalRows].sort((a,b)=>{
+        const va = (a[key] ?? '').toString().toLowerCase();
+        const vb = (b[key] ?? '').toString().toLowerCase();
+        if(va < vb) return -1 * dir;
+        if(va > vb) return  1 * dir;
+        return 0;
+      });
+      renderTable(headers, rows);
+    }
+    sortBy._dir = 1; sortBy._key = '';
+
+    function filterRows(q){
+      const term = q.trim().toLowerCase();
+      if(!term){
+        renderTable(headers, originalRows);
+        return;
+      }
+      const filtered = originalRows.filter(r=>{
+        return headers.some(h => (r[h] ?? '').toString().toLowerCase().includes(term));
+      });
+      renderTable(headers, filtered);
+    }
+
+    search.addEventListener('input', (e)=> filterRows(e.target.value));
+
+    tabs.forEach(btn => btn.addEventListener('click', async ()=>{
+      tabs.forEach(b=>{b.classList.remove('active'); b.setAttribute('aria-selected','false')});
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      activeTab = btn.dataset.tab;
+      await loadData();
+    }));
+
+    function parseCSV(text){
+      // Simple CSV parser (handles quotes, commas, newlines)
+      const rows = [];
+      let cur = '', cell = '', inQ = false; 
+      for(let i=0;i<text.length;i++){
+        const ch = text[i], next = text[i+1];
+        if(ch === '"'){
+          if(inQ && next === '"'){ cell += '"'; i++; }
+          else inQ = !inQ;
+        } else if(ch === ',' && !inQ){ cur += '\u0001'; }
+        else if((ch === '\n' || ch === '\r') && !inQ){ cur += '\u0002'; if(ch==='\r' && next==='\n') i++; }
+        else cell += ch;
+        if(ch === ',' && !inQ){ cur += cell; cell=''; }
+        if((ch === '\n' || ch === '\r') && !inQ){ cur += cell; cell=''; rows.push(cur); cur=''; }
+      }
+      if(cell || cur){ cur += cell; rows.push(cur); }
+      const arr = rows.map(r => r.split('\u0002')[0]).filter(Boolean).map(r => r.split('\u0001'));
+      const heads = arr.shift();
+      const objects = arr.slice(0, MAX_ROWS).map(r => Object.fromEntries(heads.map((h, i) => [h, r[i] ?? ''])));
+      return { heads, rows: objects };
+    }
+
+    async function loadCSV(){
+      const res = await fetch(SRC.csv);
+      const text = await res.text();
+      const { heads, rows } = parseCSV(text);
+      originalRows = rows;
+      renderTable(heads, rows);
+    }
+
+    async function loadJSON(){
+      const res = await fetch(SRC.json);
+      const data = await res.json();
+      const rows = Array.isArray(data) ? data : (data.data || data.items || []);
+      if(!rows || !rows.length){
+        tbody.innerHTML = '<tr><td>Aucun enregistrement JSON détecté.</td></tr>';
+        thead.innerHTML = '';
+        rowCount.textContent = '0 ligne';
+        colCount.textContent = '— colonnes';
+        return;
+      }
+      const heads = Object.keys(rows[0]);
+      originalRows = rows.slice(0, MAX_ROWS);
+      renderTable(heads, originalRows);
+    }
+
+    async function loadData(){
+      try{
+        if(activeTab === 'csv') await loadCSV();
+        else await loadJSON();
+      }catch(e){
+        thead.innerHTML = '';
+        tbody.innerHTML = '<tr><td>Erreur de chargement : ' + (e.message || e) + '</td></tr>';
+      }
+    }
+
+    // Copy dataset links
+    el('#copyLinks').addEventListener('click', async ()=>{
+      const txt = Object.values(SRC).join('\n');
+      try{ await navigator.clipboard.writeText(txt); alert('Liens copiés dans le presse‑papier'); }
+      catch{ prompt('Copiez les liens :', txt); }
+    });
+
+    // Init
+    (async function init(){
+      el('#year').textContent = new Date().getFullYear();
+      headRequest(SRC.csv);
+      await loadData();
+    })();
+  </script>
+</body>
 </html>
