@@ -3,246 +3,287 @@
     "Nom": "Koiran",
     "Prénom": "Pascal",
     "Nationalité": "Française",
-    "Ville": "Lyon"
+    "Ville": "Lyon",
+    "Expertise": "Professeur en informatique théorique à l'ENS Lyon, spécialiste de la complexité algorithmique"
   },
   {
     "Nom": "Wolf",
     "Prénom": "Christian",
     "Nationalité": "Française",
-    "Ville": "Lyon"
+    "Ville": "Lyon",
+    "Expertise": "Chercheur en vision par ordinateur et apprentissage profond appliqués à la robotique"
   },
   {
     "Nom": "Georgeon",
     "Prénom": "Olivier",
     "Nationalité": "Française",
-    "Ville": "Lyon"
+    "Ville": "Lyon",
+    "Expertise": "Chercheur en IA développementale et robotique constructiviste à l'UCLy"
   },
   {
     "Nom": "Rissoan",
     "Prénom": "Romain",
     "Nationalité": "Française",
-    "Ville": "Lyon"
+    "Ville": "Lyon",
+    "Expertise": "Consultant-formateur en IA générative (GPT, LLM), fondateur d'Opcadia à Lyon"
   },
   {
     "Nom": "Rochand",
     "Prénom": "Anthony",
     "Nationalité": "Française",
-    "Ville": "Lyon"
+    "Ville": "Lyon",
+    "Expertise": "Consultant-formateur en marketing digital, IA et stratégie sur les réseaux sociaux"
   },
   {
     "Nom": "Mensch",
     "Prénom": "Arthur",
     "Nationalité": "Française",
-    "Ville": "Paris"
+    "Ville": "Paris",
+    "Expertise": "Cofondateur et CEO de Mistral AI, spécialiste des grands modèles de langage (LLM)"
   },
   {
     "Nom": "Delangue",
     "Prénom": "Clément",
     "Nationalité": "Française",
-    "Ville": "Paris"
+    "Ville": "Paris",
+    "Expertise": "Cofondateur et CEO de Hugging Face, figure de l'IA open source et du machine learning"
   },
   {
     "Nom": "Ryl",
     "Prénom": "Isabelle",
     "Nationalité": "Française",
-    "Ville": "Paris"
+    "Ville": "Paris",
+    "Expertise": "Directrice de l'institut PRAIRIE, experte en IA et politiques d'innovation"
   },
   {
     "Nom": "Oudeyer",
     "Prénom": "Pierre-Yves",
     "Nationalité": "Française",
-    "Ville": "Bordeaux"
+    "Ville": "Bordeaux",
+    "Expertise": "Directeur de recherche Inria, IA développementale et apprentissage par curiosité chez les robots"
   },
   {
     "Nom": "Clautiaux",
     "Prénom": "François",
     "Nationalité": "Française",
-    "Ville": "Bordeaux"
+    "Ville": "Bordeaux",
+    "Expertise": "Professeur en recherche opérationnelle, optimisation combinatoire et programmation mathématique"
   },
   {
     "Nom": "Kadri",
     "Prénom": "Hachem",
     "Nationalité": "—",
-    "Ville": "Marseille"
+    "Ville": "Marseille",
+    "Expertise": "Spécialiste du machine learning : méthodes à noyaux et apprentissage statistique"
   },
   {
     "Nom": "Cordier",
     "Prénom": "Marie-Hélène",
     "Nationalité": "Française",
-    "Ville": "Marseille"
+    "Ville": "Marseille",
+    "Expertise": "Spécialiste de l'IA symbolique et du diagnostic de systèmes à base de modèles"
   },
   {
     "Nom": "Leray",
     "Prénom": "Philippe",
     "Nationalité": "Française",
-    "Ville": "Nantes"
+    "Ville": "Nantes",
+    "Expertise": "Professeur en modèles graphiques probabilistes, réseaux bayésiens et découverte causale"
   },
   {
     "Nom": "Charnois",
     "Prénom": "Thierry",
     "Nationalité": "Française",
-    "Ville": "Nantes"
+    "Ville": "Nantes",
+    "Expertise": "Chercheur en traitement automatique des langues et fouille de textes par motifs"
   },
   {
     "Nom": "Chaumette",
     "Prénom": "François",
     "Nationalité": "Française",
-    "Ville": "Rennes"
+    "Ville": "Rennes",
+    "Expertise": "Chercheur Inria en asservissement visuel et robotique fondée sur la vision"
   },
   {
     "Nom": "Jégou",
     "Prénom": "Hervé",
     "Nationalité": "Française",
-    "Ville": "Rennes"
+    "Ville": "Rennes",
+    "Expertise": "Chercheur Meta AI, créateur de FAISS, recherche de similarité vectorielle à grande échelle"
   },
   {
     "Nom": "Preux",
     "Prénom": "Philippe",
     "Nationalité": "Française",
-    "Ville": "Lille"
+    "Ville": "Lille",
+    "Expertise": "Pionnier de l'apprentissage automatique et de l'apprentissage par renforcement séquentiel"
   },
   {
     "Nom": "Gosselin",
     "Prénom": "Philippe-Henry",
     "Nationalité": "Française",
-    "Ville": "Lille"
+    "Ville": "Lille",
+    "Expertise": "Expert en vision par ordinateur, apprentissage profond et indexation d'images"
   },
   {
     "Nom": "Mairal",
     "Prénom": "Julien",
     "Nationalité": "Française",
-    "Ville": "Grenoble"
+    "Ville": "Grenoble",
+    "Expertise": "Spécialiste de l'apprentissage automatique, de l'optimisation et de la vision par ordinateur"
   },
   {
     "Nom": "Alameda-Pineda",
     "Prénom": "Xavier",
     "Nationalité": "—",
-    "Ville": "Grenoble"
+    "Ville": "Grenoble",
+    "Expertise": "Spécialiste de l'apprentissage multimodal audio-visuel pour l'interaction homme-robot"
   },
   {
     "Nom": "Schmid",
     "Prénom": "Cordelia",
     "Nationalité": "Française",
-    "Ville": "Grenoble"
+    "Ville": "Grenoble",
+    "Expertise": "Chercheuse de renommée mondiale en vision par ordinateur et apprentissage profond"
   },
   {
     "Nom": "Mephu Nguifo",
     "Prénom": "Engelbert",
     "Nationalité": "—",
-    "Ville": "Clermont-Ferrand"
+    "Ville": "Clermont-Ferrand",
+    "Expertise": "Spécialiste de la fouille de données, extraction de motifs et analyse formelle de concepts"
   },
   {
     "Nom": "Vrain",
     "Prénom": "Christel",
     "Nationalité": "Française",
-    "Ville": "Clermont-Ferrand"
+    "Ville": "Clermont-Ferrand",
+    "Expertise": "Spécialiste de l'apprentissage symbolique, programmation logique inductive et fouille de données"
   },
   {
     "Nom": "Padoy",
     "Prénom": "Nicolas",
     "Nationalité": "Française",
-    "Ville": "Strasbourg"
+    "Ville": "Strasbourg",
+    "Expertise": "Spécialiste de la vision par ordinateur appliquée à l'analyse des activités chirurgicales"
   },
   {
     "Nom": "Harter",
     "Prénom": "Tobias",
     "Nationalité": "—",
-    "Ville": "Strasbourg"
+    "Ville": "Strasbourg",
+    "Expertise": "Chercheur en intelligence artificielle et apprentissage automatique (laboratoire ICube, Strasbourg)"
   },
   {
     "Nom": "Nowakowski",
     "Prénom": "Samuel",
     "Nationalité": "Française",
-    "Ville": "Metz"
+    "Ville": "Metz",
+    "Expertise": "Spécialiste de l'IA responsable, des systèmes compagnons intelligents et de l'e-éducation"
   },
   {
     "Nom": "Mulongo",
     "Prénom": "Guy",
     "Nationalité": "—",
-    "Ville": "Metz"
+    "Ville": "Metz",
+    "Expertise": "Chercheur en informatique et intelligence artificielle (Université de Lorraine, Metz)"
   },
   {
     "Nom": "Jurie",
     "Prénom": "Frédéric",
     "Nationalité": "Française",
-    "Ville": "Caen"
+    "Ville": "Caen",
+    "Expertise": "Spécialiste de la vision par ordinateur et de l'apprentissage profond pour la reconnaissance d'objets"
   },
   {
     "Nom": "Bimbot",
     "Prénom": "Frédéric",
     "Nationalité": "Française",
-    "Ville": "Caen"
+    "Ville": "Caen",
+    "Expertise": "Spécialiste du traitement du signal audio, de la parole et de la reconnaissance du locuteur"
   },
   {
     "Nom": "Asher",
     "Prénom": "Nicholas",
     "Nationalité": "Américaine",
-    "Ville": "Toulouse"
+    "Ville": "Toulouse",
+    "Expertise": "Spécialiste de la sémantique formelle, de la pragmatique du discours et du TAL"
   },
   {
     "Nom": "Dobigeon",
     "Prénom": "Nicolas",
     "Nationalité": "Française",
-    "Ville": "Toulouse"
+    "Ville": "Toulouse",
+    "Expertise": "Spécialiste du traitement du signal et de l'imagerie hyperspectrale par méthodes bayésiennes"
   },
   {
     "Nom": "Bessiére",
     "Prénom": "Pierre",
     "Nationalité": "Française",
-    "Ville": "Toulouse"
+    "Ville": "Toulouse",
+    "Expertise": "Spécialiste de la robotique et de la programmation bayésienne pour la perception et l'action"
   },
   {
     "Nom": "Ayache",
     "Prénom": "Nicholas",
     "Nationalité": "Française",
-    "Ville": "Nice"
+    "Ville": "Nice",
+    "Expertise": "Directeur de recherche Inria, IA pour l'imagerie médicale et le patient numérique"
   },
   {
     "Nom": "Bouveyron",
     "Prénom": "Charles",
     "Nationalité": "Française",
-    "Ville": "Nice"
+    "Ville": "Nice",
+    "Expertise": "Professeur de statistique, apprentissage statistique en grande dimension et données complexes"
   },
   {
     "Nom": "Gori",
     "Prénom": "Marco",
     "Nationalité": "Italienne",
-    "Ville": "Nice"
+    "Ville": "Nice",
+    "Expertise": "Professeur d'informatique, apprentissage automatique et réseaux de neurones sous contraintes"
   },
   {
     "Nom": "Exposito",
     "Prénom": "Ernesto",
     "Nationalité": "—",
-    "Ville": "Pau"
+    "Ville": "Pau",
+    "Expertise": "Professeur, IA et apprentissage pour systèmes cyber-physiques et IoT (Industrie 4.0)"
   },
   {
     "Nom": "Gamboa",
     "Prénom": "Fabrice",
     "Nationalité": "Française",
-    "Ville": "Pau"
+    "Ville": "Pau",
+    "Expertise": "Professeur de mathématiques, statistiques, quantification d'incertitude et analyse de sensibilité"
   },
   {
     "Nom": "Maurel",
     "Prénom": "Denis",
     "Nationalité": "Française",
-    "Ville": "Tours"
+    "Ville": "Tours",
+    "Expertise": "Chercheur en TAL, automates et transducteurs pour la reconnaissance d'entités nommées"
   },
   {
     "Nom": "Termier",
     "Prénom": "Alexandre",
     "Nationalité": "Française",
-    "Ville": "Tours"
+    "Ville": "Tours",
+    "Expertise": "Professeur, fouille de données et extraction de motifs fréquents à grande échelle"
   },
   {
     "Nom": "Vrain",
     "Prénom": "Christel",
     "Nationalité": "Française",
-    "Ville": "Orléans"
+    "Ville": "Orléans",
+    "Expertise": "Spécialiste de l'apprentissage symbolique, programmation logique inductive et fouille de données"
   },
   {
     "Nom": "Le Ber",
     "Prénom": "Florence",
     "Nationalité": "Française",
-    "Ville": "Orléans"
+    "Ville": "Orléans",
+    "Expertise": "Chercheuse en représentation des connaissances et fouille de données spatio-temporelles"
   }
 ]

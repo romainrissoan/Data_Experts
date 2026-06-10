@@ -1,42 +1,42 @@
-Nom,Prénom,Nationalité,Ville
-Koiran,Pascal,Française,Lyon
-Wolf,Christian,Française,Lyon
-Georgeon,Olivier,Française,Lyon
-Rissoan,Romain,Française,Lyon
-Rochand,Anthony,Française,Lyon
-Mensch,Arthur,Française,Paris
-Delangue,Clément,Française,Paris
-Ryl,Isabelle,Française,Paris
-Oudeyer,Pierre-Yves,Française,Bordeaux
-Clautiaux,François,Française,Bordeaux
-Kadri,Hachem,—,Marseille
-Cordier,Marie-Hélène,Française,Marseille
-Leray,Philippe,Française,Nantes
-Charnois,Thierry,Française,Nantes
-Chaumette,François,Française,Rennes
-Jégou,Hervé,Française,Rennes
-Preux,Philippe,Française,Lille
-Gosselin,Philippe-Henry,Française,Lille
-Mairal,Julien,Française,Grenoble
-Alameda-Pineda,Xavier,—,Grenoble
-Schmid,Cordelia,Française,Grenoble
-Mephu Nguifo,Engelbert,—,Clermont-Ferrand
-Vrain,Christel,Française,Clermont-Ferrand
-Padoy,Nicolas,Française,Strasbourg
-Harter,Tobias,—,Strasbourg
-Nowakowski,Samuel,Française,Metz
-Mulongo,Guy,—,Metz
-Jurie,Frédéric,Française,Caen
-Bimbot,Frédéric,Française,Caen
-Asher,Nicholas,Américaine,Toulouse
-Dobigeon,Nicolas,Française,Toulouse
-Bessiére,Pierre,Française,Toulouse
-Ayache,Nicholas,Française,Nice
-Bouveyron,Charles,Française,Nice
-Gori,Marco,Italienne,Nice
-Exposito,Ernesto,—,Pau
-Gamboa,Fabrice,Française,Pau
-Maurel,Denis,Française,Tours
-Termier,Alexandre,Française,Tours
-Vrain,Christel,Française,Orléans
-Le Ber,Florence,Française,Orléans
+Nom,Prénom,Nationalité,Ville,Expertise
+Koiran,Pascal,Française,Lyon,"Professeur en informatique théorique à l'ENS Lyon, spécialiste de la complexité algorithmique"
+Wolf,Christian,Française,Lyon,Chercheur en vision par ordinateur et apprentissage profond appliqués à la robotique
+Georgeon,Olivier,Française,Lyon,Chercheur en IA développementale et robotique constructiviste à l'UCLy
+Rissoan,Romain,Française,Lyon,"Consultant-formateur en IA générative (GPT, LLM), fondateur d'Opcadia à Lyon"
+Rochand,Anthony,Française,Lyon,"Consultant-formateur en marketing digital, IA et stratégie sur les réseaux sociaux"
+Mensch,Arthur,Française,Paris,"Cofondateur et CEO de Mistral AI, spécialiste des grands modèles de langage (LLM)"
+Delangue,Clément,Française,Paris,"Cofondateur et CEO de Hugging Face, figure de l'IA open source et du machine learning"
+Ryl,Isabelle,Française,Paris,"Directrice de l'institut PRAIRIE, experte en IA et politiques d'innovation"
+Oudeyer,Pierre-Yves,Française,Bordeaux,"Directeur de recherche Inria, IA développementale et apprentissage par curiosité chez les robots"
+Clautiaux,François,Française,Bordeaux,"Professeur en recherche opérationnelle, optimisation combinatoire et programmation mathématique"
+Kadri,Hachem,—,Marseille,Spécialiste du machine learning : méthodes à noyaux et apprentissage statistique
+Cordier,Marie-Hélène,Française,Marseille,Spécialiste de l'IA symbolique et du diagnostic de systèmes à base de modèles
+Leray,Philippe,Française,Nantes,"Professeur en modèles graphiques probabilistes, réseaux bayésiens et découverte causale"
+Charnois,Thierry,Française,Nantes,Chercheur en traitement automatique des langues et fouille de textes par motifs
+Chaumette,François,Française,Rennes,Chercheur Inria en asservissement visuel et robotique fondée sur la vision
+Jégou,Hervé,Française,Rennes,"Chercheur Meta AI, créateur de FAISS, recherche de similarité vectorielle à grande échelle"
+Preux,Philippe,Française,Lille,Pionnier de l'apprentissage automatique et de l'apprentissage par renforcement séquentiel
+Gosselin,Philippe-Henry,Française,Lille,"Expert en vision par ordinateur, apprentissage profond et indexation d'images"
+Mairal,Julien,Française,Grenoble,"Spécialiste de l'apprentissage automatique, de l'optimisation et de la vision par ordinateur"
+Alameda-Pineda,Xavier,—,Grenoble,Spécialiste de l'apprentissage multimodal audio-visuel pour l'interaction homme-robot
+Schmid,Cordelia,Française,Grenoble,Chercheuse de renommée mondiale en vision par ordinateur et apprentissage profond
+Mephu Nguifo,Engelbert,—,Clermont-Ferrand,"Spécialiste de la fouille de données, extraction de motifs et analyse formelle de concepts"
+Vrain,Christel,Française,Clermont-Ferrand,"Spécialiste de l'apprentissage symbolique, programmation logique inductive et fouille de données"
+Padoy,Nicolas,Française,Strasbourg,Spécialiste de la vision par ordinateur appliquée à l'analyse des activités chirurgicales
+Harter,Tobias,—,Strasbourg,"Chercheur en intelligence artificielle et apprentissage automatique (laboratoire ICube, Strasbourg)"
+Nowakowski,Samuel,Française,Metz,"Spécialiste de l'IA responsable, des systèmes compagnons intelligents et de l'e-éducation"
+Mulongo,Guy,—,Metz,"Chercheur en informatique et intelligence artificielle (Université de Lorraine, Metz)"
+Jurie,Frédéric,Française,Caen,Spécialiste de la vision par ordinateur et de l'apprentissage profond pour la reconnaissance d'objets
+Bimbot,Frédéric,Française,Caen,"Spécialiste du traitement du signal audio, de la parole et de la reconnaissance du locuteur"
+Asher,Nicholas,Américaine,Toulouse,"Spécialiste de la sémantique formelle, de la pragmatique du discours et du TAL"
+Dobigeon,Nicolas,Française,Toulouse,Spécialiste du traitement du signal et de l'imagerie hyperspectrale par méthodes bayésiennes
+Bessiére,Pierre,Française,Toulouse,Spécialiste de la robotique et de la programmation bayésienne pour la perception et l'action
+Ayache,Nicholas,Française,Nice,"Directeur de recherche Inria, IA pour l'imagerie médicale et le patient numérique"
+Bouveyron,Charles,Française,Nice,"Professeur de statistique, apprentissage statistique en grande dimension et données complexes"
+Gori,Marco,Italienne,Nice,"Professeur d'informatique, apprentissage automatique et réseaux de neurones sous contraintes"
+Exposito,Ernesto,—,Pau,"Professeur, IA et apprentissage pour systèmes cyber-physiques et IoT (Industrie 4.0)"
+Gamboa,Fabrice,Française,Pau,"Professeur de mathématiques, statistiques, quantification d'incertitude et analyse de sensibilité"
+Maurel,Denis,Française,Tours,"Chercheur en TAL, automates et transducteurs pour la reconnaissance d'entités nommées"
+Termier,Alexandre,Française,Tours,"Professeur, fouille de données et extraction de motifs fréquents à grande échelle"
+Vrain,Christel,Française,Orléans,"Spécialiste de l'apprentissage symbolique, programmation logique inductive et fouille de données"
+Le Ber,Florence,Française,Orléans,Chercheuse en représentation des connaissances et fouille de données spatio-temporelles
